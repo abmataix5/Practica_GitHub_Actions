@@ -39,3 +39,28 @@ jobs:
         with:
           name: result.txt
           path: result.txt
+
+  Add_badge_job:
+    runs-on: ubuntu-latest
+    if: ${{always()}}
+    needs: Cypress-test
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Download a single artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: result.txt
+    - name: output-artifact
+      run: echo "::set-output name=cypress_outcome::$(cat result.txt)"
+    - name: Action Update Readme
+      uses: ./.github/actions/badge/
+      with:
+        resultado_test: ${{ steps.cypress.outputs.cypress_outcome }}
+    - name: Push cambios Readme
+      run: |
+        git config user.name abmataix5
+        git config user.email mataix.ab@gmail.com
+        git add .
+        git commit --allow-empty -m "Actualizar readme"
+        git push 
