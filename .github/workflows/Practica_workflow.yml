@@ -54,7 +54,7 @@ jobs:
     - name: output-artifact
       run: echo "::set-output name=cypress_outcome::$(cat result.txt)"
     - name: Action Update Readme
-      uses: ./.github/actions/badge_job/
+      uses: ./.github/actions/badge/
       with:
         resultado_test: ${{ steps.cypress.outputs.cypress_outcome }}
     - name: Push cambios Readme
