@@ -1,0 +1,12 @@
+name: 'badge'
+description: 'Test result'
+inputs:
+   resultado_test: 
+     description: 'Test result'
+     required: true
+outputs:
+ respuesta:
+   description: 'El readme ha sido modificado con éxito'
+runs:
+ using: 'node12'
+ main: 'index.js'
