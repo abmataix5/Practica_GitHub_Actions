@@ -80,3 +80,21 @@ jobs:
           vercel-org-id: ${{ secrets.ORG_ID}}
           vercel-project-id: ${{ secrets.PROJECT_ID}}
           working-directory: ./
+
+  Notification_job:
+    needs: [Linter-test, Cypress-test, Add_badge_job, deploy]
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+      - name: Send Email
+        uses: ./.github/actions/email/
+        with:
+          email: ${{ secrets.EMAIL }}
+          password: ${{ secrets.PASSWORD }}
+          send_to: ${{ secrets.EMAIL }}
+          linter: ${{ needs.Linter-test.result }}
+          cypress: ${{ needs.Cypress-testresult }}
+          badge: ${{ needs.Add_badge_job.result }}
+          deploy: ${{ needs.deploy.result }}
