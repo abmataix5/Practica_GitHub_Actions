@@ -53,10 +53,10 @@ Los flujos de trabajo tienen que contener al menos un job. Estos incluyen una se
 - output-artifact : Imprime el artifact en nuestro archivo result.txt<br><br>
 - Actualizar result: Nos crea un artifact llamado result.txt, con los resultados del test.<br><br>
 - Action Update readme: Ejecuta nuestra action personalizada que veremos a continuación, sen encarga de actualizar el archivo Readme.md con los resutados del test.<br><br>
-- Push cambios Readme: Realiza un commit y un push para actualizar los cambios en el repositorio remoto.
+- Push cambios Readme: Realiza un commit y un push para actualizar los cambios en el repositorio remoto.<br><br>
 
 #### ACTION BADGE Y ARCHIVO .JS
-<br><br>
+
 action.yaml
 
 ![Captura de pantalla de 2022-01-21 13-07-52](https://user-images.githubusercontent.com/62066419/150524752-95d2c900-3e21-4f2f-ae0c-6178b7ce0a2a.png)
