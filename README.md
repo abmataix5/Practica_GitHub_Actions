@@ -23,21 +23,21 @@ Los flujos de trabajo tienen que contener al menos un job. Estos incluyen una se
 
 #### STEPS
 
--Checkout code : Sirve para obtener el código del repositorio.<br>
--Install dependencies : Instala las dependencias de nodemodules.<br>
+-Checkout code : Sirve para obtener el código del repositorio.<br><br>
+-Install dependencies : Instala las dependencias de nodemodules.<br><br>
 -Runt lint: Ejecuta el linter.
 
 
 ## CYPRESS JOB 🚀
 ![Captura de pantalla de 2022-01-21 12-40-56](https://user-images.githubusercontent.com/62066419/150521600-d3f1b3ff-ee25-40d9-a2ad-394a4acc09a5.png)
 
--Este job se encarga de utilizar los test de cypress que contiene el proyeto, hemos utilizado la action oficial.<br>
+-Este job se encarga de utilizar los test de cypress que contiene el proyeto, hemos utilizado la action oficial.<br><br>
 -Este job se ejecutara siempre despues del Linter_job -> needs
 
 #### STEPS
 
--Cypress ejecutar : Ejecuta la action oficial del proyecto.<br>
--Guardar result : Guarda el resultado del test en un archivo llamado result.txt<br>
+-Cypress ejecutar : Ejecuta la action oficial del proyecto.<br><br>
+-Guardar result : Guarda el resultado del test en un archivo llamado result.txt<br><br>
 -Actualizar result: Nos crea un artifact llamado result.txt, con los resultados del test.
 
 
@@ -49,18 +49,18 @@ Los flujos de trabajo tienen que contener al menos un job. Estos incluyen una se
 
 #### STEPS
 
--Download a single artifact : Se encarga de de obtener el artifact almacenado en el job anterior<br>
--output-artifact : Imprime el artifact en nuestro archivo result.txt<br>
--Actualizar result: Nos crea un artifact llamado result.txt, con los resultados del test.<br>
--Action Update readme: Ejecuta nuestra action personalizada que veremos a continuación, sen encarga de actualizar el archivo Readme.md con los resutados del test.<br>
+-Download a single artifact : Se encarga de de obtener el artifact almacenado en el job anterior<br><br>
+-output-artifact : Imprime el artifact en nuestro archivo result.txt<br><br>
+-Actualizar result: Nos crea un artifact llamado result.txt, con los resultados del test.<br><br>
+-Action Update readme: Ejecuta nuestra action personalizada que veremos a continuación, sen encarga de actualizar el archivo Readme.md con los resutados del test.<br><br>
 -Push cambios Readme: Realiza un commit y un push para actualizar los cambios en el repositorio remoto.
 
 #### ACTION BADGE Y ARCHIVO .JS
-<br>
+<br><br>
 action.yaml
 
 ![Captura de pantalla de 2022-01-21 13-07-52](https://user-images.githubusercontent.com/62066419/150524752-95d2c900-3e21-4f2f-ae0c-6178b7ce0a2a.png)
-<br>
+<br><br>
 Archivo .js para escribir en el readme los reusltados del test.
 
 ![Captura de pantalla de 2022-01-21 13-07-55](https://user-images.githubusercontent.com/62066419/150524766-71d11c7b-9ff3-4a82-ba7b-6a6d8b6f0678.png)
@@ -86,9 +86,9 @@ Example of nextjs project using Cypress.io
 
 #### PASOS
 
--Creamos una cuenta en Vercel y creamos un token.<br>
--Instalamos vercen el el proyecto, seguidamente nos creara un archivo llamado project.json, en el que estaran todos los tokens necesarios para desplegar nuestra app en Vercel.<br>
--Añadiremos estos tokens a los secrets de GitHub para poder obtenerlos desde el .yml.<br>
+-Creamos una cuenta en Vercel y creamos un token.<br><br>
+-Instalamos vercen el el proyecto, seguidamente nos creara un archivo llamado project.json, en el que estaran todos los tokens necesarios para desplegar nuestra app en Vercel.<br><br>
+-Añadiremos estos tokens a los secrets de GitHub para poder obtenerlos desde el .yml.<br><br>
 
 ![Captura de pantalla de 2022-01-21 13-18-38](https://user-images.githubusercontent.com/62066419/150525988-d8689ca1-c70f-4c24-8833-1ec46cf8c0aa.png)
 
@@ -107,7 +107,7 @@ Example of nextjs project using Cypress.io
 
 
 #### STEPS
--Checkout: Este paso descarga el codigo del repositorio para poder ejecutar los siguientes pasos.<br>
+-Checkout: Este paso descarga el codigo del repositorio para poder ejecutar los siguientes pasos.<br><br>
 - Send email: Este paso ejecuta el action personalizado que hemos creado para enviar un email de confirmación.
 
 
