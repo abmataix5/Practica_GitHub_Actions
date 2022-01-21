@@ -95,3 +95,21 @@ as
 
 ![Captura de pantalla de 2022-01-21 12-42-48](https://user-images.githubusercontent.com/62066419/150521675-849b512a-4514-42a0-9117-d83da242fc4a.png)
 
+
+![Captura de pantalla de 2022-01-21 14-04-38](https://user-images.githubusercontent.com/62066419/150544925-02078e65-93e3-4963-aa48-ee1cd4ab4259.png)
+
+
+
+![Captura de pantalla de 2022-01-21 14-04-56](https://user-images.githubusercontent.com/62066419/150544960-50e7f18e-a14b-4dbd-9d34-41f266d8ab20.png)
+
+
+
+![Captura de pantalla de 2022-01-21 14-05-10](https://user-images.githubusercontent.com/62066419/150544975-af0470c5-7313-440c-b28f-c04ecdb694ab.png)
+
+
+![Captura de pantalla de 2022-01-21 15-34-02](https://user-images.githubusercontent.com/62066419/150544989-75c40041-472f-47fb-bd38-d5fd0bb01b44.png)
+
+
+
+
+
