@@ -46,7 +46,13 @@
 -Push cambios Readme: Realiza un commit y un push para actualizar los cambios en el repositorio remoto.
 
 #### ACTION BADGE Y ARCHIVO .JS
+<br>
+action.yaml
+
 ![Captura de pantalla de 2022-01-21 13-07-52](https://user-images.githubusercontent.com/62066419/150524752-95d2c900-3e21-4f2f-ae0c-6178b7ce0a2a.png)
+<br>
+Archivo .js para escribir en el readme los reusltados del test.
+
 ![Captura de pantalla de 2022-01-21 13-07-55](https://user-images.githubusercontent.com/62066419/150524766-71d11c7b-9ff3-4a82-ba7b-6a6d8b6f0678.png)
 
 
