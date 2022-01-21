@@ -68,6 +68,28 @@ Example of nextjs project using Cypress.io
 
 ![Captura de pantalla dAe 2022-01-21 12-41-31](https://user-images.githubusercontent.com/62066419/150521657-d5ff1231-3732-4ddd-bff4-7e8adcd6e70c.png)
 
+<br>
+
+#### STEPS
+
+-Desplegar App en vercel: Ejecuta una action externa, siguiendo su documentación oficial podremos desplegar nuestra app en Vercel.
+
+#### PASOS
+
+-Creamos una cuenta en Vercel y creamos un token.<br>
+-Instalamos vercen el el proyecto, seguidamente nos creara un archivo llamado project.json, en el que estaran todos los tokens necesarios para desplegar nuestra app en Vercel.<br>
+-Añadiremos estos tokens a los secrets de GitHub para poder obtenerlos desde el .yml.<br>
+
+![Captura de pantalla de 2022-01-21 13-18-38](https://user-images.githubusercontent.com/62066419/150525988-d8689ca1-c70f-4c24-8833-1ec46cf8c0aa.png)
+
+
+
+#### REULTADO 
+
+![Captura de pantalla de 2022-01-21 13-17-22](https://user-images.githubusercontent.com/62066419/150525858-2c096447-e846-4b41-b20f-7a6fc6c33801.png)
+
+
+
 
 ## NOTIFICATION JOB 🚀
 
