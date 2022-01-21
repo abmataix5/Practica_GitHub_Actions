@@ -14622,15 +14622,15 @@ var mailOptions = {
     to: `${core.getInput('email')}`,
     subject: 'Resultado del workdflow ejecutado',
     html: `
-        <div>   
-            <p>Se ha realizado un push en la rama main que ha provocado la ejecución del workflow project_flow con los siguientes resultados: </p>
-            <ul>
-                <li>linter: ${core.getInput('linter')} </li>
-                <li>cypress: ${core.getInput('cypress')} </li>
-                <li>badge: ${core.getInput('badge')} </li>
-                <li>deploy: ${core.getInput('deploy')} </li>
-            </ul>
-        </div>
+    <div>   
+        <p>Se ha realizado un push en la rama main que ha provocado la ejecución del workflow project_flow con los siguientes resultados: </p>
+        <ul>
+            <li>linter: ${core.getInput('linter')} </li>
+            <li>cypress: ${core.getInput('cypress')} </li>
+            <li>badge: ${core.getInput('badge')} </li>
+            <li>deploy: ${core.getInput('deploy')} </li>
+        </ul>
+    </div>
     ` 
 };
 
@@ -14641,8 +14641,8 @@ transporter.sendMail(mailOptions, function(error, info){
         console.log('Email sent: ' + info.response);
     }
 });
-
 })();
 
 module.exports = __webpack_exports__;
-/******/ })();
+/******/ })()
+;
