@@ -19,26 +19,26 @@ Los flujos de trabajo tienen que contener al menos un job. Estos incluyen una se
 ## LINTER JOB 🚀
 ![Captura de pantalla de 2022-01-21 12-37-32](https://user-images.githubusercontent.com/62066419/150520890-574ba131-1e20-43a0-be18-6deb3def4f6c.png)
 
--Este job se encarga de ejecutar el linter que está en el proyecto para verificar las sintaxis utilizada es la correcta, al ejecutarlo por primera vez, podemos observar diversos error en la sintaxis en alguns archivos .js, los cuales he corregido.
+- Este job se encarga de ejecutar el linter que está en el proyecto para verificar las sintaxis utilizada es la correcta, al ejecutarlo por primera vez, podemos observar diversos error en la sintaxis en alguns archivos .js, los cuales he corregido.
 
 #### STEPS
 
--Checkout code : Sirve para obtener el código del repositorio.<br><br>
--Install dependencies : Instala las dependencias de nodemodules.<br><br>
--Runt lint: Ejecuta el linter.
+- Checkout code : Sirve para obtener el código del repositorio.<br><br>
+- Install dependencies : Instala las dependencias de nodemodules.<br><br>
+- Runt lint: Ejecuta el linter.
 
 
 ## CYPRESS JOB 🚀
 ![Captura de pantalla de 2022-01-21 12-40-56](https://user-images.githubusercontent.com/62066419/150521600-d3f1b3ff-ee25-40d9-a2ad-394a4acc09a5.png)
 
--Este job se encarga de utilizar los test de cypress que contiene el proyeto, hemos utilizado la action oficial.<br><br>
--Este job se ejecutara siempre despues del Linter_job -> needs
+- Este job se encarga de utilizar los test de cypress que contiene el proyeto, hemos utilizado la action oficial.<br><br>
+- Este job se ejecutara siempre despues del Linter_job -> needs
 
 #### STEPS
 
--Cypress ejecutar : Ejecuta la action oficial del proyecto.<br><br>
--Guardar result : Guarda el resultado del test en un archivo llamado result.txt<br><br>
--Actualizar result: Nos crea un artifact llamado result.txt, con los resultados del test.
+- Cypress ejecutar : Ejecuta la action oficial del proyecto.<br><br>
+- Guardar result : Guarda el resultado del test en un archivo llamado result.txt<br><br>
+- Actualizar result: Nos crea un artifact llamado result.txt, con los resultados del test.
 
 
 
@@ -49,11 +49,11 @@ Los flujos de trabajo tienen que contener al menos un job. Estos incluyen una se
 
 #### STEPS
 
--Download a single artifact : Se encarga de de obtener el artifact almacenado en el job anterior<br><br>
--output-artifact : Imprime el artifact en nuestro archivo result.txt<br><br>
--Actualizar result: Nos crea un artifact llamado result.txt, con los resultados del test.<br><br>
--Action Update readme: Ejecuta nuestra action personalizada que veremos a continuación, sen encarga de actualizar el archivo Readme.md con los resutados del test.<br><br>
--Push cambios Readme: Realiza un commit y un push para actualizar los cambios en el repositorio remoto.
+- Download a single artifact : Se encarga de de obtener el artifact almacenado en el job anterior<br><br>
+- output-artifact : Imprime el artifact en nuestro archivo result.txt<br><br>
+- Actualizar result: Nos crea un artifact llamado result.txt, con los resultados del test.<br><br>
+- Action Update readme: Ejecuta nuestra action personalizada que veremos a continuación, sen encarga de actualizar el archivo Readme.md con los resutados del test.<br><br>
+- Push cambios Readme: Realiza un commit y un push para actualizar los cambios en el repositorio remoto.
 
 #### ACTION BADGE Y ARCHIVO .JS
 <br><br>
@@ -82,13 +82,13 @@ Example of nextjs project using Cypress.io
 
 #### STEPS
 
--Desplegar App en vercel: Ejecuta una action externa, siguiendo su documentación oficial podremos desplegar nuestra app en Vercel.
+- Desplegar App en vercel: Ejecuta una action externa, siguiendo su documentación oficial podremos desplegar nuestra app en Vercel.
 
-#### PASOS
+### CONTRASEÑA GOOGLE PARA APLICACIONES
 
--Creamos una cuenta en Vercel y creamos un token.<br><br>
+- Creamos una cuenta en Vercel y creamos un token.<br><br>
 -Instalamos vercen el el proyecto, seguidamente nos creara un archivo llamado project.json, en el que estaran todos los tokens necesarios para desplegar nuestra app en Vercel.<br><br>
--Añadiremos estos tokens a los secrets de GitHub para poder obtenerlos desde el .yml.<br><br>
+- Añadiremos estos tokens a los secrets de GitHub para poder obtenerlos desde el .yml.<br><br>
 
 ![Captura de pantalla de 2022-01-21 13-18-38](https://user-images.githubusercontent.com/62066419/150525988-d8689ca1-c70f-4c24-8833-1ec46cf8c0aa.png)
 
@@ -107,7 +107,7 @@ Example of nextjs project using Cypress.io
 
 
 #### STEPS
--Checkout: Este paso descarga el codigo del repositorio para poder ejecutar los siguientes pasos.<br><br>
+- Checkout: Este paso descarga el codigo del repositorio para poder ejecutar los siguientes pasos.<br><br>
 - Send email: Este paso ejecuta el action personalizado que hemos creado para enviar un email de confirmación.
 
 
