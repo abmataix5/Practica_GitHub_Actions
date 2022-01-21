@@ -88,7 +88,7 @@ Example of nextjs project using Cypress.io
 
 ![Captura de pantalla de 2022-01-21 13-17-22](https://user-images.githubusercontent.com/62066419/150525858-2c096447-e846-4b41-b20f-7a6fc6c33801.png)
 
-as
+
 
 
 ## NOTIFICATION JOB 🚀
@@ -96,16 +96,28 @@ as
 ![Captura de pantalla de 2022-01-21 12-42-48](https://user-images.githubusercontent.com/62066419/150521675-849b512a-4514-42a0-9117-d83da242fc4a.png)
 
 
+#### STEPS
+-Checkout: Este paso descarga el codigo del repositorio para poder ejecutar los siguientes pasos.<br>
+- Send email: Este paso ejecuta el action personalizado que hemos creado para enviar un email de confirmación.
+
+
+#### PASOS NECESARIOS
+
+-Para el correcto funcionamiento, hemos tenido que configurar nuestra cuenta de google, primero hemos tenido que hacer la verificación de dos pasos y luego para poder enviar un email desde nodemailer hemos tenido que crear un contraseña de aplicacion, que guardaremos en los secrets de GitHub para luego poder utilizarlos en el .yml.
+
 ![Captura de pantalla de 2022-01-21 14-04-38](https://user-images.githubusercontent.com/62066419/150544925-02078e65-93e3-4963-aa48-ee1cd4ab4259.png)
 
 
 
+-Codigo .js
+
 ![Captura de pantalla de 2022-01-21 14-04-56](https://user-images.githubusercontent.com/62066419/150544960-50e7f18e-a14b-4dbd-9d34-41f266d8ab20.png)
 
-
+-Action personalizada
 
 ![Captura de pantalla de 2022-01-21 14-05-10](https://user-images.githubusercontent.com/62066419/150544975-af0470c5-7313-440c-b28f-c04ecdb694ab.png)
 
+-Resultado final
 
 ![Captura de pantalla de 2022-01-21 15-34-02](https://user-images.githubusercontent.com/62066419/150544989-75c40041-472f-47fb-bd38-d5fd0bb01b44.png)
 
