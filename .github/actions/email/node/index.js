@@ -15,12 +15,12 @@ var mailOptions = {
     subject: 'Resultado del workdflow ejecutado',
     html: `
     <div>   
-        <p>Se ha realizado un push en la rama main que ha provocado la ejecución del workflow project_flow con los siguientes resultados: </p>
+        <p>Todo funciona correctamente resultados: </p>
         <ul>
-            <li>linter: ${core.getInput('linter')} </li>
-            <li>cypress: ${core.getInput('cypress')} </li>
-            <li>badge: ${core.getInput('badge')} </li>
             <li>deploy: ${core.getInput('deploy')} </li>
+            <li>linter: ${core.getInput('linter')} </li>
+            <li>badge: ${core.getInput('badge')} </li>
+            <li>cypress: ${core.getInput('cypress')} </li>
         </ul>
     </div>
     ` 
@@ -30,6 +30,6 @@ transporter.sendMail(mailOptions, function(error, info){
     if (error) {
         console.log(error);
     } else {
-        console.log('Email sent: ' + info.response);
+        console.log('Email enivado: ' + info.response);
     }
 });
