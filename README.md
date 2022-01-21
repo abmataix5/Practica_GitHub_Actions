@@ -21,6 +21,15 @@
 ## CYPRESS JOB 🚀
 ![Captura de pantalla de 2022-01-21 12-40-56](https://user-images.githubusercontent.com/62066419/150521600-d3f1b3ff-ee25-40d9-a2ad-394a4acc09a5.png)
 
+-Este job se encarga de utilizar los test de cypress que contiene el proyeto, hemos utilizado la action oficial.<br>
+-Este job se ejecutara siempre despues del Linter_job -> needs
+
+### STEPS
+
+-Cypress ejecutar : Ejecuta la action oficial del proyecto.<br>
+-Guardar result : Guarda el resultado del test en un archivo llamado result.txt<br>
+-Actualizar result: Nos crea un artifact llamado result.txt, con los resultados del test.
+
 
 
 ## BADGE JOB 🚀
