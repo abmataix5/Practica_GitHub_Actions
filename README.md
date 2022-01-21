@@ -88,7 +88,7 @@ Example of nextjs project using Cypress.io
 
 ![Captura de pantalla de 2022-01-21 13-17-22](https://user-images.githubusercontent.com/62066419/150525858-2c096447-e846-4b41-b20f-7a6fc6c33801.png)
 
-
+as
 
 
 ## NOTIFICATION JOB 🚀
