@@ -9,6 +9,13 @@
 ## LINTER JOB 🚀
 ![Captura de pantalla de 2022-01-21 12-37-32](https://user-images.githubusercontent.com/62066419/150520890-574ba131-1e20-43a0-be18-6deb3def4f6c.png)
 
+-Este job se encarga de ejecutar el linter que está en el proyecto para verificar las sintaxis utilizada es la correcta, al ejecutarlo por primera vez, podemos observar diversos error en la sintaxis en alguns archivos .js, los cuales he corregido.
+
+### STEPS
+
+-Checkout code : Sirve para obtener el código del repositorio.
+-Install dependencies : Instala las dependencias de nodemodules.
+-Runt lint: Ejecuta el linter.
 
 
 ## CYPRESS JOB 🚀
