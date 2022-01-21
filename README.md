@@ -13,8 +13,8 @@
 
 ### STEPS
 
--Checkout code : Sirve para obtener el código del repositorio.
--Install dependencies : Instala las dependencias de nodemodules.
+-Checkout code : Sirve para obtener el código del repositorio.<br>
+-Install dependencies : Instala las dependencias de nodemodules.<br>
 -Runt lint: Ejecuta el linter.
 
 
