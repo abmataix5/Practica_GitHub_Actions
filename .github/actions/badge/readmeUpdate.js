@@ -18,6 +18,6 @@ fs.readFile('README.md', 'utf-8', (err,data) => {
         if (err) {
             throw err
         }
-        console.log('Markdown Update Successfully')
+        console.log('Update Succes')
     })
 })
